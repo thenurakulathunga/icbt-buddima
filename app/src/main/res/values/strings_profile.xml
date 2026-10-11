@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Profile, edit profile, change password and addresses strings (S30–S32). -->
+<resources>
+    <string name="menu_edit_profile">Edit profile</string>
+    <string name="menu_edit_profile_sub">Name, email, mobile and photo</string>
+    <string name="menu_addresses">My addresses</string>
+    <string name="menu_addresses_sub">Delivery addresses and default</string>
+    <string name="menu_saved_designs">Saved designs</string>
+    <string name="menu_saved_designs_sub">Artwork you uploaded before</string>
+    <string name="menu_order_history">Order history</string>
+    <string name="menu_order_history_sub">Completed and cancelled orders</string>
+    <string name="menu_change_password">Change password</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_settings_sub">Notifications, theme, privacy</string>
+    <string name="menu_logout">Log out</string>
+    <string name="logout_title">Log out?</string>
+    <string name="logout_message">You will need to sign in again to place or track orders.</string>
+
+    <string name="edit_profile_title">Edit profile</string>
+    <string name="change_photo">Change photo</string>
+    <string name="profile_saved">Profile updated</string>
+    <string name="photo_updated">Photo updated</string>
+
+    <string name="change_password_title">Change password</string>
+    <string name="password_changed">Password changed</string>
+
+    <string name="addresses_title">My addresses</string>
+    <string name="action_add_address">Add address</string>
+    <string name="empty_addresses_title">No addresses yet</string>
+    <string name="empty_addresses_message">Add an address to choose home delivery at checkout.</string>
+    <string name="address_form_add">Add address</string>
+    <string name="address_form_edit">Edit address</string>
+    <string name="label_address_label">Label</string>
+    <string name="label_recipient">Recipient name</string>
+    <string name="label_recipient_phone">Recipient mobile</string>
+    <string name="label_line1">Address line 1</string>
+    <string name="label_line2">Address line 2 (optional)</string>
+    <string name="label_city">City</string>
+    <string name="label_district">District</string>
+    <string name="label_postal">Postal code</string>
+    <string name="hint_line1">House number and street</string>
+    <string name="hint_line2">Apartment, landmark</string>
+    <string name="hint_city">e.g. Colombo</string>
+    <string name="hint_postal">e.g. 00300</string>
+    <string name="hint_select">Select</string>
+    <string name="make_default">Use as default address</string>
+    <string name="address_saved">Address saved</string>
+    <string name="address_deleted">Address deleted</string>
+    <string name="delete_address_title">Delete this address?</string>
+    <string name="delete_address_message">This address will be removed from your account.</string>
+    <string name="district_fee_item">%1$s (delivery %2$s)</string>
+</resources>

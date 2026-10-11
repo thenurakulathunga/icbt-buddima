@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bottom nav item: primary when active, disabled grey when inactive (docs/05 §6.2). -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="?attr/colorPrimary" android:state_checked="true" />
+    <item android:color="@color/px_text_disabled" />
+</selector>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ProductCard content: image (16 dp top corners), name, "from" price and turnaround tag. -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="com.google.android.material.card.MaterialCardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.printxpress.app.ui.components.ArtworkImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_image_height"
+            android:contentDescription="@string/cd_product_image"
+            app:shapeAppearance="@style/ShapeAppearance.PrintXpress.CardTop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_sm">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:minLines="2"
+                android:textAppearance="@style/TextAppearance.PrintXpress.TitleSmall" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xxs"
+                android:textAppearance="@style/TextAppearance.PrintXpress.LabelLarge"
+                android:textColor="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtTurnaround"
+                style="@style/Widget.PrintXpress.Tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:drawablePadding="@dimen/space_xxs" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

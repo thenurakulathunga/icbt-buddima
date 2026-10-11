@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings (S34): notification switches, theme toggle, demo speed, about rows and delete account. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_title="@string/settings_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Widget.PrintXpress.ScreenContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/groupNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.printxpress.app.ui.components.SectionHeader
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:px_title="@string/settings_notifications" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.printxpress.app.ui.components.MenuRowView
+                            android:id="@+id/rowOrderUpdates"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:px_icon="@drawable/ic_package"
+                            app:px_showSwitch="true"
+                            app:px_subtitle="@string/settings_order_updates_sub"
+                            app:px_title="@string/settings_order_updates" />
+
+                        <com.printxpress.app.ui.components.MenuRowView
+                            android:id="@+id/rowPromos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:px_icon="@drawable/ic_offer"
+                            app:px_showSwitch="true"
+                            app:px_subtitle="@string/settings_promos_sub"
+                            app:px_title="@string/settings_promos" />
+
+                        <com.printxpress.app.ui.components.MenuRowView
+                            android:id="@+id/rowSystemNotifications"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:px_icon="@drawable/ic_notifications"
+                            app:px_subtitle="@string/settings_system_notifications_sub"
+                            app:px_title="@string/settings_system_notifications" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <com.printxpress.app.ui.components.SectionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xl"
+                app:px_title="@string/settings_appearance" />
+
+            <com.printxpress.app.ui.components.SegmentedToggle
+                android:id="@+id/toggleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm" />
+
+            <com.printxpress.app.ui.components.SectionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xl"
+                app:px_title="@string/settings_demo" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm">
+
+                <com.printxpress.app.ui.components.MenuRowView
+                    android:id="@+id/rowDemoSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:px_icon="@drawable/ic_speed"
+                    app:px_showSwitch="true"
+                    app:px_subtitle="@string/settings_demo_speed_sub"
+                    app:px_title="@string/settings_demo_speed" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.printxpress.app.ui.components.SectionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xl"
+                app:px_title="@string/settings_about" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.printxpress.app.ui.components.MenuRowView
+                        android:id="@+id/rowPrivacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:px_icon="@drawable/ic_privacy"
+                        app:px_title="@string/settings_privacy" />
+
+                    <com.printxpress.app.ui.components.MenuRowView
+                        android:id="@+id/rowLicences"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:px_icon="@drawable/ic_licence"
+                        app:px_title="@string/settings_licences" />
+
+                    <com.printxpress.app.ui.components.MenuRowView
+                        android:id="@+id/rowVersion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:px_icon="@drawable/ic_info"
+                        app:px_showChevron="false"
+                        app:px_title="@string/app_name" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xl">
+
+                <com.printxpress.app.ui.components.MenuRowView
+                    android:id="@+id/rowDeleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:px_destructive="true"
+                    app:px_icon="@drawable/ic_delete_account"
+                    app:px_subtitle="@string/settings_delete_account_sub"
+                    app:px_title="@string/settings_delete_account" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

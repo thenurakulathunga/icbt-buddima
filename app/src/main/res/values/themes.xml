@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App theme: Material 3 re-skinned to the Figma kit tokens (docs/05). Light/dark comes from values-night/colors.xml. -->
+<resources>
+    <style name="Base.Theme.PrintXpress" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/px_primary</item>
+        <item name="colorOnPrimary">@color/px_on_primary</item>
+        <item name="colorPrimaryContainer">@color/px_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/px_on_primary_container</item>
+        <item name="colorPrimaryDark">@color/px_primary</item>
+        <item name="colorSecondary">@color/px_secondary</item>
+        <item name="colorOnSecondary">@color/px_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/px_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/px_on_secondary_container</item>
+        <item name="colorTertiary">@color/px_primary</item>
+        <item name="colorError">@color/px_error</item>
+        <item name="colorOnError">@color/px_on_error</item>
+        <item name="colorErrorContainer">@color/px_error_container</item>
+        <item name="colorOnErrorContainer">@color/px_on_error_container</item>
+        <item name="android:colorBackground">@color/px_background</item>
+        <item name="colorOnBackground">@color/px_on_surface</item>
+        <item name="colorSurface">@color/px_surface</item>
+        <item name="colorOnSurface">@color/px_on_surface</item>
+        <item name="colorSurfaceVariant">@color/px_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/px_on_surface_variant</item>
+        <item name="colorSurfaceContainerLowest">@color/px_surface</item>
+        <item name="colorSurfaceContainerLow">@color/px_surface</item>
+        <item name="colorSurfaceContainer">@color/px_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/px_surface</item>
+        <item name="colorSurfaceContainerHighest">@color/px_surface_variant</item>
+        <item name="colorOutline">@color/px_outline</item>
+        <item name="colorOutlineVariant">@color/px_outline_variant</item>
+        <item name="colorControlNormal">@color/px_on_surface_variant</item>
+        <item name="colorControlActivated">@color/px_primary</item>
+        <item name="android:textColorPrimary">@color/px_on_surface</item>
+        <item name="android:textColorSecondary">@color/px_on_surface_variant</item>
+        <item name="android:textColorHint">@color/px_text_disabled</item>
+
+        <item name="android:textViewStyle">@style/Widget.PrintXpress.TextView</item>
+        <item name="editTextStyle">@style/Widget.PrintXpress.EditText</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.PrintXpress.DisplaySmall</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.PrintXpress.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.PrintXpress.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.PrintXpress.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.PrintXpress.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.PrintXpress.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.PrintXpress.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.PrintXpress.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.PrintXpress.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.PrintXpress.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.PrintXpress.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.PrintXpress.LabelSmallBold</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.PrintXpress.Medium</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.PrintXpress.Large</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.PrintXpress.ExtraLarge</item>
+        <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.PrintXpress.Small</item>
+        <item name="shapeAppearanceCornerMedium">@style/ShapeAppearance.PrintXpress.Medium</item>
+        <item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.PrintXpress.Large</item>
+        <item name="shapeAppearanceCornerExtraLarge">@style/ShapeAppearance.PrintXpress.ExtraLarge</item>
+
+        <item name="materialButtonStyle">@style/Widget.PrintXpress.Button.Filled</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.PrintXpress.Button.Outlined</item>
+        <item name="borderlessButtonStyle">@style/Widget.PrintXpress.Button.Text</item>
+        <item name="materialCardViewStyle">@style/Widget.PrintXpress.Card</item>
+        <item name="chipStyle">@style/Widget.PrintXpress.Chip.Choice</item>
+        <item name="textInputStyle">@style/Widget.PrintXpress.TextInput</item>
+        <item name="toolbarStyle">@style/Widget.PrintXpress.Toolbar</item>
+        <item name="bottomNavigationStyle">@style/Widget.PrintXpress.BottomNavigation</item>
+        <item name="tabStyle">@style/Widget.PrintXpress.TabLayout</item>
+        <item name="materialSwitchStyle">@style/Widget.Material3.CompoundButton.MaterialSwitch</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.PrintXpress.BottomSheetDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.PrintXpress.Dialog</item>
+        <item name="snackbarStyle">@style/Widget.PrintXpress.Snackbar</item>
+
+        <item name="android:windowLightStatusBar">@bool/px_light_system_bars</item>
+        <item name="android:statusBarColor">@color/px_transparent</item>
+        <item name="android:navigationBarColor">@color/px_transparent</item>
+        <item name="android:windowBackground">@color/px_background</item>
+    </style>
+
+    <style name="Theme.PrintXpress" parent="Base.Theme.PrintXpress" />
+
+    <style name="Theme.PrintXpress.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/px_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/img_logo_mark</item>
+        <item name="postSplashScreenTheme">@style/Theme.PrintXpress</item>
+    </style>
+
+    <style name="ThemeOverlay.PrintXpress.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.PrintXpress.BottomSheet</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="enableEdgeToEdge">false</item>
+    </style>
+
+    <style name="ThemeOverlay.PrintXpress.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.PrintXpress.ExtraLarge</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/Widget.PrintXpress.Dialog.Title</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/Widget.PrintXpress.Dialog.Body</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.PrintXpress.Button.Text</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.PrintXpress.Button.Text</item>
+        <item name="backgroundTint">@color/px_surface</item>
+    </style>
+
+    <style name="ThemeOverlay.PrintXpress.Dialog.Destructive">
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.PrintXpress.Button.Text.Destructive</item>
+    </style>
+</resources>

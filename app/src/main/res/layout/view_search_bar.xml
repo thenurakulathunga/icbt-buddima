@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SearchBarView content: search icon, query field, clear button and optional filter button with a count badge. -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="com.google.android.material.card.MaterialCardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_sm">
+
+        <ImageView
+            android:layout_width="@dimen/icon_md"
+            android:layout_height="@dimen/icon_md"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_search"
+            app:tint="?attr/colorOnSurfaceVariant" />
+
+        <EditText
+            android:id="@+id/editQuery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/space_xs"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/search_products_hint"
+            android:imeOptions="actionSearch"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.PrintXpress.BodyMedium"
+            android:textColorHint="@color/px_text_disabled" />
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="@dimen/touch_min"
+            android:layout_height="@dimen/touch_min"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/action_clear"
+            android:src="@drawable/ic_close"
+            android:visibility="gone"
+            app:tint="?attr/colorOnSurfaceVariant" />
+
+        <FrameLayout
+            android:id="@+id/filterContainer"
+            android:layout_width="@dimen/touch_min"
+            android:layout_height="@dimen/touch_min"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/btnFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/cd_filter"
+                android:src="@drawable/ic_filter"
+                app:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtFilterBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="@dimen/space_xxs"
+                android:layout_marginEnd="@dimen/space_xxs"
+                android:background="@drawable/bg_counter_badge"
+                android:gravity="center"
+                android:minWidth="@dimen/badge_size"
+                android:minHeight="@dimen/badge_size"
+                android:paddingStart="@dimen/space_xxs"
+                android:paddingEnd="@dimen/space_xxs"
+                android:textAppearance="@style/TextAppearance.PrintXpress.Caption"
+                android:textColor="?attr/colorOnError"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

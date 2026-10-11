@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Whether system bars use dark icons (light theme). -->
+<resources>
+    <bool name="px_light_system_bars">true</bool>
+    <bool name="px_is_tablet">false</bool>
+    <integer name="product_grid_span">2</integer>
+    <integer name="gallery_grid_span">2</integer>
+    <integer name="category_grid_span">2</integer>
+    <integer name="anim_short">150</integer>
+    <integer name="anim_medium">250</integer>
+    <integer name="anim_long">350</integer>
+</resources>

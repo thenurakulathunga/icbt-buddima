@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App shell strings: bottom navigation, tab titles and guest prompts. -->
+<resources>
+    <string name="nav_home">Home</string>
+    <string name="nav_catalog">Catalog</string>
+    <string name="nav_orders">Orders</string>
+    <string name="nav_support">Support</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="title_catalog">All products</string>
+    <string name="title_orders">My orders</string>
+    <string name="title_support">Help and support</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="guest_title">You are browsing as a guest</string>
+    <string name="guest_orders_message">Sign in to place orders and track them here.</string>
+    <string name="guest_profile_title">Welcome to PrintXpress</string>
+    <string name="guest_profile_subtitle">Sign in or create an account</string>
+</resources>

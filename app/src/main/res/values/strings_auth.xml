@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding, login, register and reset password strings (S02–S05). -->
+<resources>
+    <string name="onboard_title_1">Browse every print product</string>
+    <string name="onboard_text_1">Business cards, flyers, posters, banners, stickers, mugs and t-shirts – filtered by type, material and size.</string>
+    <string name="onboard_title_2">Upload your design or just type</string>
+    <string name="onboard_text_2">Send a PDF, PNG or JPG, or enter your text and we will lay it out for you.</string>
+    <string name="onboard_title_3">Pick up or get it delivered</string>
+    <string name="onboard_text_3">Choose a branch or home delivery, pick a date, and track every step until it is ready.</string>
+    <string name="onboard_get_started">Get started</string>
+
+    <string name="login_title">Welcome back</string>
+    <string name="login_subtitle">Sign in to order and track your prints.</string>
+    <string name="login_tab_email">Email</string>
+    <string name="login_tab_phone">Mobile</string>
+    <string name="label_email">Email</string>
+    <string name="label_phone">Mobile number</string>
+    <string name="label_password">Password</string>
+    <string name="label_new_password">New password</string>
+    <string name="label_confirm_password">Confirm password</string>
+    <string name="label_current_password">Current password</string>
+    <string name="label_full_name">Full name</string>
+    <string name="hint_email">name@example.com</string>
+    <string name="hint_phone">07XXXXXXXX</string>
+    <string name="hint_password">At least 8 characters</string>
+    <string name="hint_full_name">e.g. Nimal Perera</string>
+    <string name="remember_me">Keep me signed in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="action_login">Sign in</string>
+    <string name="no_account">New to PrintXpress?</string>
+    <string name="action_create_account">Create account</string>
+    <string name="continue_as_guest">Continue as guest</string>
+
+    <string name="register_title">Create your account</string>
+    <string name="register_subtitle">Use your email, your mobile number, or both.</string>
+    <string name="helper_contact">Enter an email or mobile number (at least one)</string>
+    <string name="terms_accept">I agree to the Terms of Use and Privacy Notice</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="register_success">Account created. Welcome to PrintXpress!</string>
+
+    <string name="reset_title">Reset your password</string>
+    <string name="reset_subtitle">Enter the email and mobile number registered on this device, then choose a new password.</string>
+    <string name="action_reset">Reset password</string>
+    <string name="reset_success">Password updated. Sign in with your new password.</string>
+</resources>

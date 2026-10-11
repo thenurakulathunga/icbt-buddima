@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Quantity strings for counts shown in components and screens. -->
+<resources>
+    <plurals name="product_count">
+        <item quantity="one">%d product</item>
+        <item quantity="other">%d products</item>
+    </plurals>
+    <plurals name="result_count">
+        <item quantity="one">%d result</item>
+        <item quantity="other">%d results</item>
+    </plurals>
+    <plurals name="cd_cart_count">
+        <item quantity="one">Cart, %d item</item>
+        <item quantity="other">Cart, %d items</item>
+    </plurals>
+    <plurals name="cd_notifications_count">
+        <item quantity="one">Notifications, %d unread</item>
+        <item quantity="other">Notifications, %d unread</item>
+    </plurals>
+    <plurals name="detail_turnaround">
+        <item quantity="one">Ready in %d working day</item>
+        <item quantity="other">Ready in %d working days</item>
+    </plurals>
+    <plurals name="turnaround_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="checkout_turnaround_note">
+        <item quantity="one">Your order needs %d working day to print. Sundays and public holidays are closed.</item>
+        <item quantity="other">Your order needs %d working days to print. Sundays and public holidays are closed.</item>
+    </plurals>
+</resources>

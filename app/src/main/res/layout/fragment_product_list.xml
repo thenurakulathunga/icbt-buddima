@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Product list (S08): back bar, search with filter button, result count, product grid with skeleton/empty/error states. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_showBack="true" />
+
+    <com.printxpress.app.ui.components.SearchBarView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_lg"
+        android:layout_marginTop="@dimen/space_xs"
+        android:layout_marginEnd="@dimen/space_lg"
+        app:px_hint="@string/search_products_hint"
+        app:px_showFilter="true" />
+
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_lg"
+        android:layout_marginTop="@dimen/space_sm"
+        android:layout_marginBottom="@dimen/space_xs"
+        android:textAppearance="@style/TextAppearance.PrintXpress.BodySmall" />
+
+    <com.printxpress.app.ui.components.StateLayout
+        android:id="@+id/stateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:px_skeletonLayout="@layout/view_skeleton_product">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/space_lg"
+            android:paddingEnd="@dimen/space_lg"
+            android:paddingBottom="@dimen/space_lg" />
+    </com.printxpress.app.ui.components.StateLayout>
+</LinearLayout>

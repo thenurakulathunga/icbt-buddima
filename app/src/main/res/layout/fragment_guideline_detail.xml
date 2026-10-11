@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Guideline detail (S26): topic icon, title, full text, and for bleed the scaled template with a share action. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_title="@string/guidelines_title" />
+
+    <com.printxpress.app.ui.components.StateLayout
+        android:id="@+id/stateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/Widget.PrintXpress.ScreenContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgTopic"
+                    android:layout_width="@dimen/icon_hero"
+                    android:layout_height="@dimen/icon_hero"
+                    android:layout_gravity="center_horizontal"
+                    android:importantForAccessibility="no"
+                    app:tint="?attr/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:accessibilityHeading="true"
+                    android:textAppearance="@style/TextAppearance.PrintXpress.HeadlineSmall" />
+
+                <TextView
+                    android:id="@+id/txtContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:textAppearance="@style/TextAppearance.PrintXpress.Body.Content" />
+
+                <LinearLayout
+                    android:id="@+id/groupTemplate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xl"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.printxpress.app.ui.components.BleedTemplateView
+                        android:id="@+id/template"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.printxpress.app.ui.components.LoadingButton
+                        android:id="@+id/btnShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_lg"
+                        app:px_icon="@drawable/ic_share"
+                        app:px_style="outlined"
+                        app:px_text="@string/action_share_template" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.printxpress.app.ui.components.StateLayout>
+</LinearLayout>

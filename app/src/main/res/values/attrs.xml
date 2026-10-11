@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Custom attributes for the reusable components in ui/components (docs/06). Shared attributes are declared once and referenced by each styleable. -->
+<resources>
+    <attr name="px_title" format="string" />
+    <attr name="px_subtitle" format="string" />
+    <attr name="px_label" format="string" />
+    <attr name="px_hint" format="string" />
+    <attr name="px_helper" format="string" />
+    <attr name="px_message" format="string" />
+    <attr name="px_text" format="string" />
+    <attr name="px_actionText" format="string" />
+    <attr name="px_buttonText" format="string" />
+    <attr name="px_icon" format="reference" />
+    <attr name="px_startIcon" format="reference" />
+    <attr name="px_maxLength" format="integer" />
+    <attr name="px_showChevron" format="boolean" />
+    <attr name="px_showSwitch" format="boolean" />
+    <attr name="px_showBack" format="boolean" />
+    <attr name="px_showActions" format="boolean" />
+    <attr name="px_showFilter" format="boolean" />
+    <attr name="px_destructive" format="boolean" />
+    <attr name="px_skeletonLayout" format="reference" />
+    <attr name="px_inputType">
+        <enum name="text" value="0" />
+        <enum name="email" value="1" />
+        <enum name="phone" value="2" />
+        <enum name="password" value="3" />
+        <enum name="number" value="4" />
+        <enum name="multiline" value="5" />
+        <enum name="name" value="6" />
+        <enum name="postal" value="7" />
+        <enum name="code" value="8" />
+    </attr>
+    <attr name="px_style">
+        <enum name="filled" value="0" />
+        <enum name="tonal" value="1" />
+        <enum name="outlined" value="2" />
+        <enum name="text" value="3" />
+    </attr>
+    <attr name="px_type">
+        <enum name="info" value="0" />
+        <enum name="warning" value="1" />
+        <enum name="success" value="2" />
+        <enum name="error" value="3" />
+    </attr>
+
+    <declare-styleable name="PxTextInput">
+        <attr name="px_label" />
+        <attr name="px_hint" />
+        <attr name="px_helper" />
+        <attr name="px_inputType" />
+        <attr name="px_startIcon" />
+        <attr name="px_maxLength" />
+    </declare-styleable>
+
+    <declare-styleable name="PxDropdown">
+        <attr name="px_label" />
+        <attr name="px_hint" />
+        <attr name="px_startIcon" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingButton">
+        <attr name="px_text" />
+        <attr name="px_style" />
+        <attr name="px_icon" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectableOptionCard">
+        <attr name="px_icon" />
+        <attr name="px_title" />
+        <attr name="px_subtitle" />
+    </declare-styleable>
+
+    <declare-styleable name="SectionHeader">
+        <attr name="px_title" />
+        <attr name="px_actionText" />
+    </declare-styleable>
+
+    <declare-styleable name="MenuRowView">
+        <attr name="px_icon" />
+        <attr name="px_title" />
+        <attr name="px_subtitle" />
+        <attr name="px_showChevron" />
+        <attr name="px_showSwitch" />
+        <attr name="px_destructive" />
+    </declare-styleable>
+
+    <declare-styleable name="InfoBanner">
+        <attr name="px_type" />
+        <attr name="px_title" />
+        <attr name="px_message" />
+    </declare-styleable>
+
+    <declare-styleable name="AppTopBar">
+        <attr name="px_title" />
+        <attr name="px_showBack" />
+        <attr name="px_showActions" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyStateView">
+        <attr name="px_icon" />
+        <attr name="px_title" />
+        <attr name="px_message" />
+        <attr name="px_actionText" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchBarView">
+        <attr name="px_hint" />
+        <attr name="px_showFilter" />
+    </declare-styleable>
+
+    <declare-styleable name="StickyBottomBar">
+        <attr name="px_label" />
+        <attr name="px_buttonText" />
+    </declare-styleable>
+
+    <declare-styleable name="StateLayout">
+        <attr name="px_skeletonLayout" />
+    </declare-styleable>
+</resources>

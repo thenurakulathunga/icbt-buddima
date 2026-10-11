@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Support hub (S24): intro and menu rows to guidelines, FAQs, gallery, offers, contact and tickets. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_showBack="false"
+        app:px_title="@string/title_support" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Widget.PrintXpress.ScreenContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/support_intro"
+                android:textAppearance="@style/TextAppearance.PrintXpress.HeadlineSmall" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:text="@string/support_intro_sub"
+                android:textAppearance="@style/TextAppearance.PrintXpress.Body.Secondary" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.printxpress.app.ui.components.MenuRowView
+                        android:id="@+id/rowGuidelines"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:px_icon="@drawable/ic_guidelines"
+                        app:px_subtitle="@string/menu_guidelines_sub"
+                        app:px_title="@string/menu_guidelines" />
+
+                    <com.printxpress.app.ui.components.MenuRowView
+                        android:id="@+id/rowFaqs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:px_icon="@drawable/ic_faq"
+                        app:px_subtitle="@string/menu_faqs_sub"
+                        app:px_title="@string/menu_faqs" />
+
+                    <com.printxpress.app.ui.components.MenuRowView
+                        android:id="@+id/rowGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:px_icon="@drawable/ic_image"
+                        app:px_subtitle="@string/menu_gallery_sub"
+                        app:px_title="@string/menu_gallery" />
+
+                    <com.printxpress.app.ui.components.MenuRowView
+                        android:id="@+id/rowOffers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:px_icon="@drawable/ic_offer"
+                        app:px_subtitle="@string/menu_offers_sub"
+                        app:px_title="@string/menu_offers" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.printxpress.app.ui.components.MenuRowView
+                        android:id="@+id/rowContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:px_icon="@drawable/ic_call"
+                        app:px_subtitle="@string/menu_contact_sub"
+                        app:px_title="@string/menu_contact" />
+
+                    <com.printxpress.app.ui.components.MenuRowView
+                        android:id="@+id/rowTickets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:px_icon="@drawable/ic_ticket"
+                        app:px_subtitle="@string/menu_tickets_sub"
+                        app:px_title="@string/menu_tickets" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

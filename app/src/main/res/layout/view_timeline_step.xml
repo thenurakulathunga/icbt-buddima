@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One OrderTimelineView step: circle marker with connector line, status title and timestamp/remark. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/timeline_dot"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgMarker"
+            android:layout_width="@dimen/timeline_dot"
+            android:layout_height="@dimen/timeline_dot"
+            android:importantForAccessibility="no"
+            android:padding="@dimen/space_xxs"
+            app:tint="?attr/colorOnPrimary" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/timeline_line"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="@dimen/space_lg"
+            android:background="?attr/colorOutline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_md"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_md">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.PrintXpress.TitleSmall" />
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xxs"
+            android:textAppearance="@style/TextAppearance.PrintXpress.BodySmall" />
+    </LinearLayout>
+</LinearLayout>

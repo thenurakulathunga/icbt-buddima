@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text used inside reusable components (docs/06): statuses, upload zone, strength meter, price summary, date picker. -->
+<resources>
+    <string name="status_pending">Pending</string>
+    <string name="status_confirmed">Confirmed</string>
+    <string name="status_processing">Processing</string>
+    <string name="status_printing">Printing</string>
+    <string name="status_ready_for_pickup">Ready for pickup</string>
+    <string name="status_out_for_delivery">Out for delivery</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_cancelled">Cancelled</string>
+
+    <string name="timeline_upcoming">Upcoming</string>
+    <string name="timeline_rescheduled">Rescheduled to %1$s</string>
+
+    <string name="upload_title">Tap to upload your artwork</string>
+    <string name="upload_subtitle">PDF, PNG or JPG · up to 25 MB</string>
+    <string name="upload_replace">Replace</string>
+    <string name="file_size_kb">%1$.1f KB</string>
+    <string name="file_size_mb">%1$.1f MB</string>
+
+    <string name="strength_empty">Password strength</string>
+    <string name="strength_weak">Weak</string>
+    <string name="strength_fair">Fair</string>
+    <string name="strength_good">Good</string>
+    <string name="strength_strong">Strong</string>
+    <string name="strength_missing">Add: %1$s</string>
+    <string name="strength_length">8+ characters</string>
+    <string name="strength_upper">an upper-case letter</string>
+    <string name="strength_lower">a lower-case letter</string>
+    <string name="strength_digit">a number</string>
+    <string name="strength_symbol">a symbol</string>
+    <string name="list_separator">", "</string>
+
+    <string name="price_items">Items</string>
+    <string name="price_bulk">Bulk discount</string>
+    <string name="price_promo">Promo (%1$s)</string>
+    <string name="price_delivery">Delivery fee</string>
+    <string name="price_delivery_free">Free</string>
+    <string name="price_total">Total</string>
+    <string name="price_from">from %1$s</string>
+    <string name="price_each">%1$s / %2$s</string>
+
+    <string name="date_label">Date</string>
+    <string name="slot_label">Time slot</string>
+    <string name="closed_day">Closed</string>
+
+    <string name="badge_default">Default</string>
+    <string name="badge_seasonal">Seasonal</string>
+    <string name="badge_offer">Offer</string>
+    <string name="badge_overflow">99+</string>
+
+    <string name="order_items_one">%1$s</string>
+    <string name="order_items_more">%1$s + %2$d more</string>
+    <string name="order_placed_on">Placed %1$s</string>
+    <string name="order_schedule_pickup">Pickup %1$s · %2$s</string>
+    <string name="order_schedule_delivery">Delivery %1$s · %2$s</string>
+
+    <string name="design_custom_text">Custom text</string>
+    <string name="design_file">File: %1$s</string>
+    <string name="design_saved_on">Saved %1$s</string>
+    <string name="quantity_label">Quantity</string>
+    <string name="specs_separator">" · "</string>
+    <string name="option_modifier_up">+%1$d%%</string>
+    <string name="option_modifier_down">-%1$d%%</string>
+    <string name="address_fee">%1$s · Delivery %2$s</string>
+    <string name="address_label_home">Home</string>
+    <string name="address_label_work">Work</string>
+    <string name="address_label_other">Other</string>
+
+    <string name="time_just_now">Just now</string>
+    <string name="time_minutes">%1$d min ago</string>
+    <string name="time_hours">%1$d h ago</string>
+    <string name="time_days">%1$d d ago</string>
+
+    <string name="copied_code">Code %1$s copied</string>
+    <string name="copy_code_hint">Tap to copy</string>
+    <string name="promo_code_label">Code: %1$s</string>
+    <string name="loading_please_wait">Please wait…</string>
+</resources>

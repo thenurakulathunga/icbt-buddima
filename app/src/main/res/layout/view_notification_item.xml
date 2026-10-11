@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NotificationItemView content: type icon tile, title, message, relative time and unread dot. -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <ImageView
+        android:id="@+id/imgType"
+        android:layout_width="@dimen/avatar_sm"
+        android:layout_height="@dimen/avatar_sm"
+        android:background="@drawable/bg_icon_tile"
+        android:importantForAccessibility="no"
+        android:padding="@dimen/space_xs"
+        app:tint="?attr/colorOnPrimaryContainer" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_md"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.PrintXpress.TitleSmall" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xxs"
+            android:textAppearance="@style/TextAppearance.PrintXpress.Body.Secondary" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xxs"
+            android:textAppearance="@style/TextAppearance.PrintXpress.BodySmall" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dotUnread"
+        android:layout_width="@dimen/badge_dot"
+        android:layout_height="@dimen/badge_dot"
+        android:layout_marginStart="@dimen/space_xs"
+        android:layout_marginTop="@dimen/space_xs"
+        android:background="@drawable/bg_badge_dot"
+        android:contentDescription="@string/cd_unread" />
+</merge>

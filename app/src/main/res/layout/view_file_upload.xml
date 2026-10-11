@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileUploadView: an empty dashed drop zone, or a preview row with name, size and remove; plus an error line. -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <LinearLayout
+        android:id="@+id/zoneEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upload_zone_height"
+        android:background="@drawable/bg_dashed_upload"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/space_md">
+
+        <ImageView
+            android:layout_width="@dimen/icon_lg"
+            android:layout_height="@dimen/icon_lg"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_upload"
+            app:tint="?attr/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:text="@string/upload_title"
+            android:textAppearance="@style/TextAppearance.PrintXpress.TitleSmall"
+            android:textColor="?attr/colorOnPrimaryContainer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xxs"
+            android:text="@string/upload_subtitle"
+            android:textAppearance="@style/TextAppearance.PrintXpress.BodySmall" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardPreview"
+        style="@style/Widget.PrintXpress.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_sm">
+
+            <com.printxpress.app.ui.components.ArtworkImageView
+                android:id="@+id/imgThumb"
+                android:layout_width="@dimen/thumb_size"
+                android:layout_height="@dimen/thumb_size"
+                android:importantForAccessibility="no"
+                app:shapeAppearance="@style/ShapeAppearance.PrintXpress.Small" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_sm"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.PrintXpress.TitleSmall" />
+
+                <TextView
+                    android:id="@+id/txtSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xxs"
+                    android:textAppearance="@style/TextAppearance.PrintXpress.BodySmall" />
+
+                <TextView
+                    android:id="@+id/btnReplace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xxs"
+                    android:background="?attr/selectableItemBackground"
+                    android:minHeight="@dimen/space_xl"
+                    android:gravity="center_vertical"
+                    android:text="@string/upload_replace"
+                    android:textAppearance="@style/TextAppearance.PrintXpress.Link" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnRemove"
+                android:layout_width="@dimen/touch_min"
+                android:layout_height="@dimen/touch_min"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/cd_remove_file"
+                android:src="@drawable/ic_delete"
+                app:tint="?attr/colorError" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txtError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xxs"
+        android:textAppearance="@style/TextAppearance.PrintXpress.Error"
+        android:visibility="gone" />
+</merge>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gallery viewer page: zoomable artwork above its title and description. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.ZoomLayout
+        android:id="@+id/zoom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="true">
+
+        <com.printxpress.app.ui.components.ArtworkImageView
+            android:id="@+id/imgArt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.printxpress.app.ui.components.ZoomLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingTop="@dimen/space_md"
+        android:paddingEnd="@dimen/space_lg"
+        android:textAppearance="@style/TextAppearance.PrintXpress.TitleMedium" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingTop="@dimen/space_xs"
+        android:paddingEnd="@dimen/space_lg"
+        android:paddingBottom="@dimen/space_lg"
+        android:textAppearance="@style/TextAppearance.PrintXpress.Body.Secondary" />
+</LinearLayout>

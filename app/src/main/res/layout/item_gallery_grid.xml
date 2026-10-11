@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gallery grid item: GalleryTile. -->
+<com.printxpress.app.ui.components.GalleryTile xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tile"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/gallery_grid_height" />

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Login (S03): wordmark, Email/Mobile toggle, identifier, password, remember me, sign in, links and guest entry. -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/Widget.PrintXpress.ScreenContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.printxpress.app.ui.components.BrandLogoView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xl"
+            android:textAppearance="@style/TextAppearance.PrintXpress.HeadlineMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            android:text="@string/login_title"
+            android:textAppearance="@style/TextAppearance.PrintXpress.HeadlineSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xxs"
+            android:text="@string/login_subtitle"
+            android:textAppearance="@style/TextAppearance.PrintXpress.Body.Secondary" />
+
+        <com.printxpress.app.ui.components.SegmentedToggle
+            android:id="@+id/toggleMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg" />
+
+        <com.printxpress.app.ui.components.PxTextInput
+            android:id="@+id/inputIdentifier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md"
+            app:px_hint="@string/hint_email"
+            app:px_inputType="email"
+            app:px_label="@string/label_email"
+            app:px_startIcon="@drawable/ic_mail" />
+
+        <com.printxpress.app.ui.components.PxTextInput
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md"
+            app:px_hint="@string/hint_password"
+            app:px_inputType="password"
+            app:px_label="@string/label_password"
+            app:px_startIcon="@drawable/ic_lock" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkRemember"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/remember_me"
+                android:textAppearance="@style/TextAppearance.PrintXpress.BodyMedium" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnForgot"
+                style="@style/Widget.PrintXpress.Button.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password" />
+        </LinearLayout>
+
+        <com.printxpress.app.ui.components.LoadingButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md"
+            app:px_style="filled"
+            app:px_text="@string/action_login" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_md"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_account"
+                android:textAppearance="@style/TextAppearance.PrintXpress.Body.Secondary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
+                style="@style/Widget.PrintXpress.Button.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_create_account" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.printxpress.app.ui.components.LoadingButton
+            android:id="@+id/btnGuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_lg"
+            app:px_style="outlined"
+            app:px_text="@string/continue_as_guest" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

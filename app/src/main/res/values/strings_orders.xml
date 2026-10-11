@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- My orders, order detail, reschedule and cancel strings (S17–S20). -->
+<resources>
+    <string name="tab_active">Active</string>
+    <string name="tab_past">Past</string>
+    <string name="empty_active_title">No active orders</string>
+    <string name="empty_active_message">Orders you place will appear here while they are being printed.</string>
+    <string name="empty_past_title">No past orders</string>
+    <string name="empty_past_message">Completed and cancelled orders are kept here.</string>
+    <string name="action_start_order">Start an order</string>
+
+    <string name="order_detail_title">Order details</string>
+    <string name="order_placed">Placed %1$s</string>
+    <string name="section_tracking">Tracking</string>
+    <string name="section_order_items">Items</string>
+    <string name="section_fulfilment">Pickup or delivery</string>
+    <string name="section_payment_summary">Payment</string>
+    <string name="order_payment_method">Payment method</string>
+    <string name="order_notes">Notes</string>
+    <string name="item_line">%1$s × %2$d</string>
+    <string name="banner_printing">Printing has started, so this order can no longer be cancelled or rescheduled.</string>
+    <string name="banner_cancelled">This order was cancelled: %1$s</string>
+    <string name="banner_completed">This order is complete. Thank you!</string>
+    <string name="banner_ready">Your order is ready at %1$s.</string>
+    <string name="action_reschedule">Reschedule</string>
+    <string name="action_cancel_order">Cancel order</string>
+    <string name="action_reorder">Reorder</string>
+    <string name="action_get_help">Get help with this order</string>
+    <string name="locked_helper">Changes are only possible before printing starts.</string>
+
+    <string name="reschedule_title">Reschedule</string>
+    <string name="action_confirm_reschedule">Save new date</string>
+    <string name="rescheduled">Order rescheduled</string>
+
+    <string name="cancel_title">Cancel this order?</string>
+    <string name="cancel_subtitle">Tell us why so we can improve.</string>
+    <string name="cancel_reason_mistake">Ordered by mistake</string>
+    <string name="cancel_reason_change">I want to change the design</string>
+    <string name="cancel_reason_date">The date no longer suits me</string>
+    <string name="cancel_reason_price">Found a better price</string>
+    <string name="cancel_reason_other">Other</string>
+    <string name="label_cancel_note">More details (optional)</string>
+    <string name="cancel_reason_with_note">%1$s – %2$s</string>
+    <string name="action_confirm_cancel">Cancel order</string>
+    <string name="cancel_confirm_title">Cancel order %1$s?</string>
+    <string name="cancel_confirm_message">This cannot be undone.</string>
+    <string name="action_keep_order">Keep order</string>
+    <string name="order_cancelled">Order cancelled</string>
+</resources>

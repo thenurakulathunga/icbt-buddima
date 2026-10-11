@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bottom navigation (kit Tab Bar): Home, Catalog, Orders, Support, Profile. Item ids match nav_main destinations. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/catalogFragment"
+        android:icon="@drawable/ic_nav_catalog"
+        android:title="@string/nav_catalog" />
+    <item
+        android:id="@+id/ordersFragment"
+        android:icon="@drawable/ic_nav_orders"
+        android:title="@string/nav_orders" />
+    <item
+        android:id="@+id/supportFragment"
+        android:icon="@drawable/ic_nav_support"
+        android:title="@string/nav_support" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_nav_profile"
+        android:title="@string/nav_profile" />
+</menu>

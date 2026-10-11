@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PDF upload preview: Pdf01 icon on primary container. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="rectangle"><solid android:color="?attr/colorPrimaryContainer" /><corners android:radius="@dimen/radius_sm" /></shape></item>
+    <item android:drawable="@drawable/ic_pdf" android:gravity="center" android:width="@dimen/icon_lg" android:height="@dimen/icon_lg" />
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home row item: fixed-width CategoryCard. -->
+<com.printxpress.app.ui.components.CategoryCard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:layout_width="@dimen/category_row_width"
+    android:layout_height="wrap_content" />

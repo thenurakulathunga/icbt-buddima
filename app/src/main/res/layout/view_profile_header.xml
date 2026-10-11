@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ProfileHeaderView content: brand gradient with avatar, name, contact and an edit button (white text, 5.7:1+). -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/avatar_lg"
+        android:layout_height="@dimen/avatar_lg"
+        android:contentDescription="@string/cd_avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_avatar_placeholder"
+        app:shapeAppearance="@style/ShapeAppearance.PrintXpress.Circle"
+        app:strokeColor="@color/px_on_dark"
+        app:strokeWidth="2dp"
+        android:padding="1dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_md"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.PrintXpress.OnBrand.Headline" />
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xxs"
+            android:textAppearance="@style/TextAppearance.PrintXpress.OnBrand" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="@dimen/touch_min"
+        android:layout_height="@dimen/touch_min"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/action_edit"
+        android:src="@drawable/ic_edit"
+        app:tint="@color/px_on_dark" />
+</merge>

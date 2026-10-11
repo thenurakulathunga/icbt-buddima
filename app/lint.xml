@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Lint configuration: the design-token catalogue (docs/05) and the generated Hugeicons set are kept whole on purpose, so unused entries there are not reported. -->
+<lint>
+    <issue id="UnusedResources">
+        <ignore path="src/main/res/values/colors.xml" />
+        <ignore path="src/main/res/values-night/colors.xml" />
+        <ignore path="src/main/res/values/dimens.xml" />
+        <ignore path="src/main/res/values/integers.xml" />
+        <ignore path="src/main/res/values-night/bools.xml" />
+        <ignore path="src/main/res/values/bools.xml" />
+        <ignore path="src/main/res/values/styles.xml" />
+        <ignore path="src/main/res/values/type.xml" />
+        <ignore path="src/main/res/values/shapes.xml" />
+        <ignore path="src/main/res/anim/*" />
+        <ignore path="src/main/res/font/*" />
+        <ignore path="src/main/res/drawable/ic_*.xml" />
+        <ignore path="src/main/res/drawable/img_pdf_thumb.xml" />
+        <ignore path="src/main/res/drawable/shape_bottom_sheet.xml" />
+    </issue>
+</lint>

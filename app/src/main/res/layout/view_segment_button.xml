@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One SegmentedToggle segment: transparent when idle, white pill when selected. -->
+<com.google.android.material.button.MaterialButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Material3.Button.TextButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:checkable="true"
+    android:insetTop="0dp"
+    android:insetBottom="0dp"
+    android:minHeight="@dimen/button_height"
+    android:textAppearance="@style/TextAppearance.PrintXpress.LabelMedium"
+    android:textColor="@color/selector_segment_text"
+    app:backgroundTint="@color/selector_segment_background"
+    app:shapeAppearance="@style/ShapeAppearance.PrintXpress.Pill" />

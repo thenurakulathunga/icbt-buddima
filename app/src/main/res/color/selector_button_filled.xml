@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Filled button background: primary, faded surface variant when disabled. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="?attr/colorSurfaceVariant" android:state_enabled="false" />
+    <item android:color="?attr/colorPrimary" />
+</selector>

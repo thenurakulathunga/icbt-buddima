@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Choice chip label: on-primary when selected, on-primary-container otherwise. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/px_text_disabled" android:state_enabled="false" />
+    <item android:color="?attr/colorOnPrimary" android:state_checked="true" />
+    <item android:color="?attr/colorOnPrimaryContainer" />
+</selector>

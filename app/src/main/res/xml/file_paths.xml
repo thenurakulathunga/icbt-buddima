@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileProvider paths: only the cache "shared" folder is exposed, for sharing the bleed template (FR-5.5). -->
+<paths>
+    <cache-path
+        name="shared"
+        path="shared/" />
+</paths>

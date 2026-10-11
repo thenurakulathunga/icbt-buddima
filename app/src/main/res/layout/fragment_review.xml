@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Checkout – review and pay (S15): items, fulfilment summary, promo code, payment method, notes, price breakdown, Place order. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_title="@string/review_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Widget.PrintXpress.ScreenContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.printxpress.app.ui.components.SectionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:px_title="@string/review_items" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:nestedScrollingEnabled="false" />
+
+            <com.printxpress.app.ui.components.SectionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                app:px_title="@string/review_fulfilment" />
+
+            <com.printxpress.app.ui.components.InfoTableView
+                android:id="@+id/tableFulfilment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.printxpress.app.ui.components.SectionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                app:px_title="@string/label_promo_code" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <com.printxpress.app.ui.components.PxTextInput
+                    android:id="@+id/inputPromo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:px_hint="@string/hint_promo_code"
+                    app:px_inputType="code"
+                    app:px_maxLength="12"
+                    app:px_startIcon="@drawable/ic_offer" />
+
+                <com.printxpress.app.ui.components.LoadingButton
+                    android:id="@+id/btnApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_sm"
+                    android:minWidth="96dp"
+                    app:px_style="tonal"
+                    app:px_text="@string/action_apply" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRemovePromo"
+                style="@style/Widget.PrintXpress.Button.Text.Destructive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_remove_promo"
+                android:visibility="gone" />
+
+            <com.printxpress.app.ui.components.SectionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                app:px_title="@string/review_payment" />
+
+            <com.printxpress.app.ui.components.SelectableOptionCard
+                android:id="@+id/cardPayPickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                app:px_icon="@drawable/ic_payment"
+                app:px_subtitle="@string/payment_pickup_sub"
+                app:px_title="@string/payment_pickup" />
+
+            <com.printxpress.app.ui.components.SelectableOptionCard
+                android:id="@+id/cardPayCod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                app:px_icon="@drawable/ic_delivery"
+                app:px_subtitle="@string/payment_cod_sub"
+                app:px_title="@string/payment_cod" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                app:px_inputType="multiline"
+                app:px_label="@string/label_notes"
+                app:px_maxLength="200" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg">
+
+                <com.printxpress.app.ui.components.PriceSummaryView
+                    android:id="@+id/priceSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space_md" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.printxpress.app.ui.components.StickyBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_buttonText="@string/action_place_order"
+        app:px_label="@string/price_total" />
+</LinearLayout>

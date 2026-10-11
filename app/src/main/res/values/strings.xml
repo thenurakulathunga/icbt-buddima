@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared strings: app identity, common actions, validation and repository error messages (docs/01 §8). Feature screens have their own strings_*.xml files. -->
+<resources>
+    <string name="app_name">PrintXpress</string>
+    <string name="brand_print">Print</string>
+    <string name="brand_x">X</string>
+    <string name="brand_press">press</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_retry">Try again</string>
+    <string name="action_next">Next</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_apply">Apply</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_see_all">See all</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_ok">OK</string>
+    <string name="action_not_now">Not now</string>
+    <string name="action_allow">Allow</string>
+
+    <string name="cd_back">Go back</string>
+    <string name="cd_cart">Cart</string>
+    <string name="cd_notifications">Notifications</string>
+    <string name="cd_filter">Filter</string>
+    <string name="cd_increase">Increase quantity</string>
+    <string name="cd_decrease">Decrease quantity</string>
+    <string name="cd_remove_file">Remove file</string>
+    <string name="cd_product_image">Product image</string>
+    <string name="cd_avatar">Profile photo</string>
+    <string name="cd_logo">PrintXpress logo</string>
+    <string name="cd_unread">Unread</string>
+
+    <string name="state_loading">Loading…</string>
+    <string name="state_error_title">Something went wrong</string>
+    <string name="state_error_message">We could not load this right now. Please try again.</string>
+
+    <string name="err_generic">Something went wrong. Please try again.</string>
+    <string name="err_name_invalid">Enter your full name (3–60 letters)</string>
+    <string name="err_email_invalid">Enter a valid email address</string>
+    <string name="err_email_taken">This email is already registered</string>
+    <string name="err_phone_invalid">Enter a valid Sri Lankan mobile number (07XXXXXXXX)</string>
+    <string name="err_phone_taken">This mobile number is already registered</string>
+    <string name="err_contact_required">Enter an email or mobile number</string>
+    <string name="err_identifier_required">Enter your email or mobile number</string>
+    <string name="err_password_required">Enter your password</string>
+    <string name="err_password_weak">Use 8+ characters with upper and lower case, a number and a symbol</string>
+    <string name="err_password_mismatch">Passwords do not match</string>
+    <string name="err_password_current">Current password is incorrect</string>
+    <string name="err_password_same">Choose a password different from your current one</string>
+    <string name="err_terms_required">Please accept the terms to continue</string>
+    <string name="err_invalid_credentials">Invalid credentials. Check your details and try again.</string>
+    <string name="err_reset_mismatch">No account matches that email and mobile number</string>
+    <string name="err_not_signed_in">Please sign in to continue</string>
+    <string name="err_address_invalid">Enter an address line (5–100 characters)</string>
+    <string name="err_label_invalid">Enter a label (e.g. Home)</string>
+    <string name="err_city_invalid">Enter a valid city</string>
+    <string name="err_district_required">Select a district</string>
+    <string name="err_postal_invalid">Enter a 5-digit postal code</string>
+    <string name="err_qty_range">Enter %1$d–%2$d in steps of %3$d</string>
+    <string name="err_qty_invalid">Enter a valid quantity for this product</string>
+    <string name="err_design_required">Upload a file or enter custom text</string>
+    <string name="err_text_too_long">Keep it under 250 characters</string>
+    <string name="err_file_type">Only PDF, PNG or JPG files are accepted</string>
+    <string name="err_file_size">File must be larger than 0 bytes and at most 25 MB</string>
+    <string name="err_file_read">We could not read that file. Try another one.</string>
+    <string name="err_date_invalid">Choose an available date</string>
+    <string name="err_slot_required">Choose a time slot</string>
+    <string name="err_branch_required">Choose a pickup branch</string>
+    <string name="err_address_required">Add or choose a delivery address</string>
+    <string name="err_promo_invalid">Enter a valid promo code</string>
+    <string name="err_promo_not_found">This promo code does not exist</string>
+    <string name="err_promo_expired">This promo code has expired</string>
+    <string name="err_promo_minimum_plain">Your order does not meet this code\'s minimum value</string>
+    <string name="err_promo_not_applicable">This code does not apply to the items in your cart</string>
+    <string name="err_promo_first_order">This code is only valid on your first order</string>
+    <string name="err_ticket_subject">Enter a subject (5–80 characters)</string>
+    <string name="err_ticket_invalid">Enter a message (10–1000 characters)</string>
+    <string name="err_reason_required">Select a reason</string>
+    <string name="err_note_too_long">Keep it under 200 characters</string>
+    <string name="err_cart_empty">Your cart is empty</string>
+    <string name="err_product_unavailable">This product is no longer available</string>
+    <string name="err_order_not_found">Order not found</string>
+    <string name="err_order_locked">Printing has started, so this order can no longer be changed</string>
+    <string name="err_no_app">No app found to handle this action</string>
+    <string name="err_design_in_use">This design is used by an item in your cart. Remove the item first.</string>
+</resources>

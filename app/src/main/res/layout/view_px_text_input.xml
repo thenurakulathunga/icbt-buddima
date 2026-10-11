@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PxTextInput: kit-style label above an outlined Material text field (docs/05 §6.2). -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <TextView
+        android:id="@+id/pxLabel"
+        style="@style/Widget.PrintXpress.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pxLayout"
+        style="@style/Widget.PrintXpress.TextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pxEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/input_height"
+            android:textAppearance="@style/TextAppearance.PrintXpress.BodyMedium" />
+    </com.google.android.material.textfield.TextInputLayout>
+</merge>

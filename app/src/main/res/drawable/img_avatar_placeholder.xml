@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default avatar: UserCircle on primary container, full circle. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="oval"><solid android:color="?attr/colorPrimaryContainer" /></shape></item>
+    <item android:drawable="@drawable/ic_person" android:gravity="center" android:width="@dimen/icon_lg" android:height="@dimen/icon_lg" />
+</layer-list>

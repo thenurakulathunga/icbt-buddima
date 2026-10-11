@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Register (S04): name, email, mobile, password with strength meter, confirmation, terms, create account. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_showBack="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Widget.PrintXpress.ScreenContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_title"
+                android:textAppearance="@style/TextAppearance.PrintXpress.HeadlineSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xxs"
+                android:text="@string/register_subtitle"
+                android:textAppearance="@style/TextAppearance.PrintXpress.Body.Secondary" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                app:px_hint="@string/hint_full_name"
+                app:px_inputType="name"
+                app:px_label="@string/label_full_name"
+                app:px_maxLength="60"
+                app:px_startIcon="@drawable/ic_person" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_helper="@string/helper_contact"
+                app:px_hint="@string/hint_email"
+                app:px_inputType="email"
+                app:px_label="@string/label_email"
+                app:px_startIcon="@drawable/ic_mail" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_hint="@string/hint_phone"
+                app:px_inputType="phone"
+                app:px_label="@string/label_phone"
+                app:px_startIcon="@drawable/ic_phone" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_hint="@string/hint_password"
+                app:px_inputType="password"
+                app:px_label="@string/label_password"
+                app:px_startIcon="@drawable/ic_lock" />
+
+            <com.printxpress.app.ui.components.PasswordStrengthMeter
+                android:id="@+id/strengthMeter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_inputType="password"
+                app:px_label="@string/label_confirm_password"
+                app:px_startIcon="@drawable/ic_password" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:text="@string/terms_accept"
+                android:textAppearance="@style/TextAppearance.PrintXpress.BodyMedium" />
+
+            <TextView
+                android:id="@+id/txtTermsError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/err_terms_required"
+                android:textAppearance="@style/TextAppearance.PrintXpress.Error"
+                android:visibility="gone" />
+
+            <com.printxpress.app.ui.components.LoadingButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                app:px_style="filled"
+                app:px_text="@string/action_create_account" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_sm"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/have_account"
+                    android:textAppearance="@style/TextAppearance.PrintXpress.Body.Secondary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    style="@style/Widget.PrintXpress.Button.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_login" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

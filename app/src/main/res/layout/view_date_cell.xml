@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One DateSlotPicker date cell: day name, day number and month (or "Closed"). -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.PrintXpress.Card.Selectable"
+    android:layout_width="@dimen/date_chip_width"
+    android:layout_height="@dimen/date_chip_height"
+    android:layout_marginEnd="@dimen/space_xs"
+    app:checkedIcon="@null"
+    app:shapeAppearance="@style/ShapeAppearance.PrintXpress.Medium"
+    app:strokeWidth="@dimen/stroke_focus">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.PrintXpress.LabelMedium"
+            android:textColor="?attr/colorOnSurfaceVariant" />
+
+        <TextView
+            android:id="@+id/txtNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.PrintXpress.TitleMedium" />
+
+        <TextView
+            android:id="@+id/txtMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.PrintXpress.Caption"
+            android:textColor="?attr/colorOnSurfaceVariant" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

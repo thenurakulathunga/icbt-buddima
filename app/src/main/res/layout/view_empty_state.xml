@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EmptyStateView content: illustration disc, title, message and an optional call-to-action. -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <ImageView
+        android:id="@+id/imgIllustration"
+        android:layout_width="@dimen/illustration_small"
+        android:layout_height="@dimen/illustration_small"
+        android:background="@drawable/bg_circle_container"
+        android:importantForAccessibility="no"
+        android:padding="@dimen/space_xl"
+        app:tint="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_lg"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.PrintXpress.TitleMedium" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xs"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.PrintXpress.Body.Secondary" />
+
+    <com.printxpress.app.ui.components.LoadingButton
+        android:id="@+id/btnAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_lg"
+        android:minWidth="200dp"
+        android:visibility="gone"
+        app:px_style="filled" />
+</merge>

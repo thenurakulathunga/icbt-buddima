@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DateSlotPicker: a horizontal strip of date cells and a row of time-slot chips, each with an error line. -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <TextView
+        style="@style/Widget.PrintXpress.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_label" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/dateRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txtDateError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xxs"
+        android:textAppearance="@style/TextAppearance.PrintXpress.Error"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/Widget.PrintXpress.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:text="@string/slot_label" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/slotGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:selectionRequired="false"
+        app:singleSelection="true" />
+
+    <TextView
+        android:id="@+id/txtSlotError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xxs"
+        android:textAppearance="@style/TextAppearance.PrintXpress.Error"
+        android:visibility="gone" />
+</merge>

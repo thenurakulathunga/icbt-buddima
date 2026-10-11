@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Order success (S16): check illustration, title, order number card, schedule, Track order and Continue shopping. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/space_lg">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:layout_width="@dimen/illustration_size"
+        android:layout_height="@dimen/illustration_size"
+        android:background="@drawable/bg_circle_container">
+
+        <ImageView
+            android:layout_width="@dimen/icon_hero"
+            android:layout_height="@dimen/icon_hero"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_status_completed"
+            app:tint="?attr/colorPrimary" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_lg"
+        android:text="@string/success_title"
+        android:textAppearance="@style/TextAppearance.PrintXpress.DisplaySmall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xs"
+        android:gravity="center"
+        android:text="@string/success_message"
+        android:textAppearance="@style/TextAppearance.PrintXpress.Body.Secondary" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_lg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/space_md">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/success_number"
+                android:textAppearance="@style/TextAppearance.PrintXpress.Caption"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+
+            <TextView
+                android:id="@+id/txtOrderNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xxs"
+                android:textAppearance="@style/TextAppearance.PrintXpress.HeadlineSmall"
+                android:textColor="?attr/colorPrimary"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/txtSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.PrintXpress.BodyMedium" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:textAppearance="@style/TextAppearance.PrintXpress.Price" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.printxpress.app.ui.components.LoadingButton
+        android:id="@+id/btnTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_style="filled"
+        app:px_text="@string/action_track_order" />
+
+    <com.printxpress.app.ui.components.LoadingButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_sm"
+        app:px_style="outlined"
+        app:px_text="@string/action_continue_shopping" />
+</LinearLayout>

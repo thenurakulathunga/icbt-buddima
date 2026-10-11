@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Design input (S12): Upload/Text toggle, file drop zone and saved designs, or custom text; instructions; tip; Add to cart. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_title="@string/design_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_md"
+            android:paddingBottom="@dimen/space_lg">
+
+            <com.printxpress.app.ui.components.SegmentedToggle
+                android:id="@+id/toggleMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_lg"
+                android:layout_marginEnd="@dimen/space_lg" />
+
+            <LinearLayout
+                android:id="@+id/sectionUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.printxpress.app.ui.components.FileUploadView
+                    android:id="@+id/fileUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_lg"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:layout_marginEnd="@dimen/space_lg" />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progressFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_lg"
+                    android:layout_marginEnd="@dimen/space_lg"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+                <com.printxpress.app.ui.components.SectionHeader
+                    android:id="@+id/headerSaved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:paddingStart="@dimen/space_lg"
+                    android:paddingEnd="@dimen/space_lg"
+                    app:px_title="@string/design_saved_pick" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listSaved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingStart="@dimen/space_lg"
+                    android:paddingEnd="@dimen/space_lg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sectionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/space_lg"
+                android:paddingEnd="@dimen/space_lg"
+                android:visibility="gone">
+
+                <com.printxpress.app.ui.components.PxTextInput
+                    android:id="@+id/inputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    app:px_hint="@string/hint_custom_text"
+                    app:px_inputType="multiline"
+                    app:px_label="@string/label_custom_text"
+                    app:px_maxLength="250" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDesignError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_lg"
+                android:layout_marginTop="@dimen/space_xs"
+                android:textAppearance="@style/TextAppearance.PrintXpress.Error"
+                android:visibility="gone" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_lg"
+                android:layout_marginTop="@dimen/space_lg"
+                android:layout_marginEnd="@dimen/space_lg"
+                app:px_hint="@string/hint_instructions"
+                app:px_inputType="multiline"
+                app:px_label="@string/label_instructions"
+                app:px_maxLength="200" />
+
+            <com.printxpress.app.ui.components.InfoBanner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_lg"
+                android:layout_marginTop="@dimen/space_md"
+                android:layout_marginEnd="@dimen/space_lg"
+                app:px_message="@string/design_tip"
+                app:px_type="info" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.printxpress.app.ui.components.StickyBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_buttonText="@string/action_add_to_cart"
+        app:px_label="@string/configure_price" />
+</LinearLayout>

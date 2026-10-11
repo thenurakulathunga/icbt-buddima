@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home, catalogue, product list, filter sheet and product detail strings (S06–S10). -->
+<resources>
+    <string name="home_greeting">Hi, %1$s</string>
+    <string name="home_greeting_guest">Hi there</string>
+    <string name="home_subtitle">What would you like to print today?</string>
+    <string name="search_products_hint">Search business cards, flyers, mugs…</string>
+    <string name="section_categories">Categories</string>
+    <string name="section_popular">Popular products</string>
+    <string name="section_active_order">Your active order</string>
+    <string name="section_inspiration">Design inspiration</string>
+
+    <string name="catalog_subtitle">Pick a category to start your order</string>
+    <string name="products_all">All products</string>
+    <string name="products_search_title">Search results</string>
+    <string name="sort_popular">Popular</string>
+    <string name="sort_price_low">Price: low to high</string>
+    <string name="sort_price_high">Price: high to low</string>
+    <string name="sort_name">Name A–Z</string>
+    <string name="filter_title">Filter and sort</string>
+    <string name="filter_sort_by">Sort by</string>
+    <string name="filter_reset">Reset</string>
+    <string name="filter_show_results">Show results</string>
+    <string name="empty_search_title">No products found</string>
+    <string name="empty_search_message">Try a different search term or clear your filters.</string>
+    <string name="action_clear_filters">Clear filters</string>
+
+    <string name="detail_min_order">Min. quantity: %1$d</string>
+    <string name="detail_description">About this product</string>
+    <string name="detail_specs">Specifications</string>
+    <string name="detail_price_table">Price guide</string>
+    <string name="detail_price_table_note">Standard options, before promo codes. Bulk discounts apply automatically.</string>
+    <string name="detail_qty_col">Quantity</string>
+    <string name="detail_unit_col">Per unit</string>
+    <string name="detail_total_col">Total</string>
+    <string name="detail_samples">Sample designs</string>
+    <string name="detail_starting">Starting at</string>
+    <string name="action_configure">Configure and order</string>
+</resources>

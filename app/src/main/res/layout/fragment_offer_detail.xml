@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Offer detail (S23): promotion card, terms table, copy code and shop now actions. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_title="@string/offer_detail_title" />
+
+    <com.printxpress.app.ui.components.StateLayout
+        android:id="@+id/stateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/Widget.PrintXpress.ScreenContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.printxpress.app.ui.components.PromoCard
+                    android:id="@+id/cardPromo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/promo_card_height" />
+
+                <com.printxpress.app.ui.components.InfoTableView
+                    android:id="@+id/tableTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg" />
+
+                <com.printxpress.app.ui.components.LoadingButton
+                    android:id="@+id/btnCopy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xl"
+                    app:px_icon="@drawable/ic_copy"
+                    app:px_style="outlined"
+                    app:px_text="@string/action_copy_code" />
+
+                <com.printxpress.app.ui.components.LoadingButton
+                    android:id="@+id/btnShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    app:px_style="filled"
+                    app:px_text="@string/action_shop_now" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.printxpress.app.ui.components.StateLayout>
+</LinearLayout>

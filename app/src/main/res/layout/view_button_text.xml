@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LoadingButton inner button, text style. -->
+<com.google.android.material.button.MaterialButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.PrintXpress.Button.Text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />

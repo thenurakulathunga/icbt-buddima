@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main navigation graph hosted by MainActivity: five bottom-nav tabs plus catalogue, ordering, tracking, notification, offer, support, gallery and settings screens. -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.printxpress.app.ui.home.HomeFragment"
+        android:label="@string/nav_home" />
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.printxpress.app.ui.catalog.CatalogFragment"
+        android:label="@string/nav_catalog" />
+
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.printxpress.app.ui.orders.OrdersFragment"
+        android:label="@string/nav_orders" />
+
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.printxpress.app.ui.support.SupportFragment"
+        android:label="@string/nav_support" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.printxpress.app.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile" />
+
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.printxpress.app.ui.catalog.ProductListFragment"
+        android:label="@string/products_all">
+        <argument
+            android:name="categoryId"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <argument
+            android:name="title"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="query"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.printxpress.app.ui.product.ProductDetailFragment"
+        android:label="@string/detail_description">
+        <argument
+            android:name="productId"
+            app:argType="long" />
+    </fragment>
+
+    <navigation
+        android:id="@+id/nav_configure"
+        app:startDestination="@id/configureFragment">
+
+        <fragment
+            android:id="@+id/configureFragment"
+            android:name="com.printxpress.app.ui.configure.ConfigureFragment"
+            android:label="@string/configure_title">
+            <argument
+                android:name="productId"
+                app:argType="long" />
+            <argument
+                android:name="cartItemId"
+                android:defaultValue="0L"
+                app:argType="long" />
+            <action
+                android:id="@+id/action_configure_to_design"
+                app:destination="@id/designInputFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/designInputFragment"
+            android:name="com.printxpress.app.ui.configure.DesignInputFragment"
+            android:label="@string/design_title">
+            <action
+                android:id="@+id/action_design_to_cart"
+                app:destination="@id/cartFragment"
+                app:popUpTo="@id/nav_configure"
+                app:popUpToInclusive="true" />
+        </fragment>
+    </navigation>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.printxpress.app.ui.cart.CartFragment"
+        android:label="@string/cart_title" />
+
+    <navigation
+        android:id="@+id/nav_checkout"
+        app:startDestination="@id/checkoutFragment">
+
+        <fragment
+            android:id="@+id/checkoutFragment"
+            android:name="com.printxpress.app.ui.checkout.CheckoutFragment"
+            android:label="@string/checkout_title">
+            <action
+                android:id="@+id/action_checkout_to_review"
+                app:destination="@id/reviewFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/reviewFragment"
+            android:name="com.printxpress.app.ui.checkout.ReviewFragment"
+            android:label="@string/review_title">
+            <action
+                android:id="@+id/action_review_to_success"
+                app:destination="@id/orderSuccessFragment"
+                app:popUpTo="@id/cartFragment"
+                app:popUpToInclusive="true" />
+        </fragment>
+    </navigation>
+
+    <fragment
+        android:id="@+id/orderSuccessFragment"
+        android:name="com.printxpress.app.ui.checkout.OrderSuccessFragment"
+        android:label="@string/success_title">
+        <argument
+            android:name="orderId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedDesignsFragment"
+        android:name="com.printxpress.app.ui.profile.SavedDesignsFragment"
+        android:label="@string/saved_designs_title" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.printxpress.app.ui.profile.EditProfileFragment"
+        android:label="@string/edit_profile_title" />
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.printxpress.app.ui.profile.ChangePasswordFragment"
+        android:label="@string/change_password_title" />
+
+    <fragment
+        android:id="@+id/addressesFragment"
+        android:name="com.printxpress.app.ui.profile.AddressesFragment"
+        android:label="@string/addresses_title" />
+
+    <fragment
+        android:id="@+id/addressFormFragment"
+        android:name="com.printxpress.app.ui.profile.AddressFormFragment"
+        android:label="@string/address_form_add">
+        <argument
+            android:name="addressId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.printxpress.app.ui.orders.OrderDetailFragment"
+        android:label="@string/order_detail_title">
+        <argument
+            android:name="orderId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.printxpress.app.ui.notifications.NotificationsFragment"
+        android:label="@string/notifications_title" />
+
+    <fragment
+        android:id="@+id/offersFragment"
+        android:name="com.printxpress.app.ui.offers.OffersFragment"
+        android:label="@string/offers_title" />
+
+    <fragment
+        android:id="@+id/offerDetailFragment"
+        android:name="com.printxpress.app.ui.offers.OfferDetailFragment"
+        android:label="@string/offer_detail_title">
+        <argument
+            android:name="promoId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.printxpress.app.ui.settings.SettingsFragment"
+        android:label="@string/settings_title" />
+
+    <fragment
+        android:id="@+id/guidelinesFragment"
+        android:name="com.printxpress.app.ui.support.GuidelinesFragment"
+        android:label="@string/guidelines_title" />
+
+    <fragment
+        android:id="@+id/guidelineDetailFragment"
+        android:name="com.printxpress.app.ui.support.GuidelineDetailFragment"
+        android:label="@string/guidelines_title">
+        <argument
+            android:name="guidelineId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/faqsFragment"
+        android:name="com.printxpress.app.ui.support.FaqsFragment"
+        android:label="@string/faqs_title" />
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.printxpress.app.ui.support.ContactFragment"
+        android:label="@string/contact_title">
+        <argument
+            android:name="orderId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ticketsFragment"
+        android:name="com.printxpress.app.ui.support.TicketsFragment"
+        android:label="@string/tickets_title" />
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.printxpress.app.ui.gallery.GalleryFragment"
+        android:label="@string/gallery_title" />
+
+    <fragment
+        android:id="@+id/galleryViewerFragment"
+        android:name="com.printxpress.app.ui.gallery.GalleryViewerFragment"
+        android:label="@string/gallery_title">
+        <argument
+            android:name="categoryId"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <argument
+            android:name="position"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>

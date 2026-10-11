@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Address form (S32): label, recipient, mobile, lines, city, district dropdown, postal code, default switch, Save. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Widget.PrintXpress.ScreenContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.printxpress.app.ui.components.PxDropdown
+                android:id="@+id/dropLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:px_hint="@string/hint_select"
+                app:px_label="@string/label_address_label"
+                app:px_startIcon="@drawable/ic_tag" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputRecipient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_inputType="name"
+                app:px_label="@string/label_recipient"
+                app:px_maxLength="60"
+                app:px_startIcon="@drawable/ic_person" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_hint="@string/hint_phone"
+                app:px_inputType="phone"
+                app:px_label="@string/label_recipient_phone"
+                app:px_startIcon="@drawable/ic_phone" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputLine1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_hint="@string/hint_line1"
+                app:px_label="@string/label_line1"
+                app:px_maxLength="100"
+                app:px_startIcon="@drawable/ic_home_address" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputLine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_hint="@string/hint_line2"
+                app:px_label="@string/label_line2"
+                app:px_maxLength="100" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_hint="@string/hint_city"
+                app:px_inputType="name"
+                app:px_label="@string/label_city" />
+
+            <com.printxpress.app.ui.components.PxDropdown
+                android:id="@+id/dropDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_hint="@string/hint_select"
+                app:px_label="@string/label_district"
+                app:px_startIcon="@drawable/ic_location" />
+
+            <com.printxpress.app.ui.components.PxTextInput
+                android:id="@+id/inputPostal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                app:px_hint="@string/hint_postal"
+                app:px_inputType="postal"
+                app:px_label="@string/label_postal"
+                app:px_maxLength="5" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_md"
+                android:minHeight="@dimen/touch_min"
+                android:text="@string/make_default"
+                android:textAppearance="@style/TextAppearance.PrintXpress.BodyMedium" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.printxpress.app.ui.components.StickyBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_buttonText="@string/action_save" />
+</LinearLayout>

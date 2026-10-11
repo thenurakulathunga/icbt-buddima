@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Light colour tokens from docs/05 §3.1 (Kit = Figma kit, Derived = WCAG AA fix, App = PrintXpress-only); values-night overrides the same names. -->
+<resources>
+    <color name="px_primary">#0060DB</color>
+    <color name="px_on_primary">#FFFFFF</color>
+    <color name="px_primary_container">#EAF2FF</color>
+    <color name="px_on_primary_container">#0050B8</color>
+    <color name="px_secondary">#6FBAFF</color>
+    <color name="px_on_secondary">#1F2024</color>
+    <color name="px_secondary_container">#B4DBFF</color>
+    <color name="px_on_secondary_container">#1F2024</color>
+    <color name="px_brand_bright">#006FFD</color>
+
+    <color name="px_error">#C8102E</color>
+    <color name="px_on_error">#FFFFFF</color>
+    <color name="px_error_container">#FFE2E5</color>
+    <color name="px_on_error_container">#B3261E</color>
+    <color name="px_error_accent">#FF616D</color>
+
+    <color name="px_success">#3AC0A0</color>
+    <color name="px_success_container">#E7F4E8</color>
+    <color name="px_on_success_container">#1D6B53</color>
+    <color name="px_success_text">#1D6B53</color>
+    <color name="px_warning">#FFB37C</color>
+    <color name="px_warning_container">#FFF4E4</color>
+    <color name="px_on_warning_container">#9A4A0E</color>
+
+    <color name="px_background">#F8F9FE</color>
+    <color name="px_surface">#FFFFFF</color>
+    <color name="px_surface_variant">#E8E9F1</color>
+    <color name="px_on_surface">#1F2024</color>
+    <color name="px_text_strong">#2F3036</color>
+    <color name="px_text_body">#494A50</color>
+    <color name="px_on_surface_variant">#71727A</color>
+    <color name="px_text_disabled">#8F9098</color>
+    <color name="px_outline">#C5C6CC</color>
+    <color name="px_outline_variant">#D4D6DD</color>
+    <color name="px_scrim">#991F2024</color>
+    <color name="px_on_dark">#FFFFFF</color>
+    <color name="px_ink">#1F2024</color>
+
+    <color name="px_gradient_brand_start">#0060DB</color>
+    <color name="px_gradient_brand_end">#004399</color>
+    <color name="px_gradient_promo_start">#FFB37C</color>
+    <color name="px_gradient_promo_end">#FF616D</color>
+
+    <color name="px_status_pending_bg">#FFF4E4</color>
+    <color name="px_status_pending_fg">#9A4A0E</color>
+    <color name="px_status_confirmed_bg">#EAF2FF</color>
+    <color name="px_status_confirmed_fg">#0050B8</color>
+    <color name="px_status_printing_bg">#B4DBFF</color>
+    <color name="px_status_printing_fg">#1F2024</color>
+    <color name="px_status_ready_bg">#E7F4E8</color>
+    <color name="px_status_ready_fg">#1D6B53</color>
+    <color name="px_status_completed_bg">#3AC0A0</color>
+    <color name="px_status_completed_fg">#1F2024</color>
+    <color name="px_status_cancelled_bg">#FFE2E5</color>
+    <color name="px_status_cancelled_fg">#B3261E</color>
+
+    <color name="px_guide_bleed">#FF616D</color>
+    <color name="px_guide_safe">#3AC0A0</color>
+    <color name="px_guide_trim">#1F2024</color>
+    <color name="px_rgb_red">#FF3B30</color>
+    <color name="px_rgb_green">#34C759</color>
+    <color name="px_rgb_blue">#0060DB</color>
+    <color name="px_cmyk_cyan">#00AEEF</color>
+    <color name="px_cmyk_magenta">#EC008C</color>
+    <color name="px_cmyk_yellow">#FFF200</color>
+    <color name="px_launcher_background">#0060DB</color>
+    <color name="px_transparent">#00000000</color>
+</resources>

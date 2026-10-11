@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shimmer skeleton for product grids: two rows of two card placeholders. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/space_lg">
+
+    <include layout="@layout/view_skeleton_product_row" />
+
+    <include
+        layout="@layout/view_skeleton_product_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Spacing, shape, elevation and size tokens from docs/05 §6 (4 dp grid, 24 dp gutter, radius ladder §6.1). -->
+<resources>
+    <dimen name="space_xxs">4dp</dimen>
+    <dimen name="space_xs">8dp</dimen>
+    <dimen name="space_sm">12dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+    <dimen name="space_xxl">48dp</dimen>
+
+    <dimen name="radius_xs">4dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_xl">24dp</dimen>
+    <dimen name="radius_xxl">32dp</dimen>
+    <dimen name="radius_pill">999dp</dimen>
+
+    <dimen name="stroke_default">1dp</dimen>
+    <dimen name="stroke_focus">1.5dp</dimen>
+    <dimen name="elevation_card">0dp</dimen>
+    <dimen name="elevation_sheet">8dp</dimen>
+    <dimen name="elevation_dialog">8dp</dimen>
+    <dimen name="elevation_bar">2dp</dimen>
+
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="input_height">48dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="bottom_nav_height">64dp</dimen>
+    <dimen name="progress_height">8dp</dimen>
+    <dimen name="list_item_min">72dp</dimen>
+    <dimen name="touch_min">48dp</dimen>
+    <dimen name="cart_item_height">100dp</dimen>
+    <dimen name="dialog_width">300dp</dimen>
+
+    <dimen name="icon_sm">16dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="icon_tile">48dp</dimen>
+    <dimen name="icon_hero">64dp</dimen>
+    <dimen name="avatar_sm">40dp</dimen>
+    <dimen name="avatar_md">56dp</dimen>
+    <dimen name="avatar_lg">80dp</dimen>
+    <dimen name="badge_size">20dp</dimen>
+    <dimen name="badge_dot">8dp</dimen>
+    <dimen name="page_dot">8dp</dimen>
+    <dimen name="page_dot_active">24dp</dimen>
+    <dimen name="timeline_dot">24dp</dimen>
+    <dimen name="timeline_line">2dp</dimen>
+
+    <dimen name="product_image_height">140dp</dimen>
+    <dimen name="product_hero_height">280dp</dimen>
+    <dimen name="promo_card_height">184dp</dimen>
+    <dimen name="gallery_strip_width">140dp</dimen>
+    <dimen name="gallery_strip_height">180dp</dimen>
+    <dimen name="category_card_height">120dp</dimen>
+    <dimen name="thumb_size">64dp</dimen>
+    <dimen name="illustration_size">180dp</dimen>
+    <dimen name="illustration_small">120dp</dimen>
+    <dimen name="upload_zone_height">160dp</dimen>
+    <dimen name="date_chip_width">64dp</dimen>
+    <dimen name="date_chip_height">72dp</dimen>
+    <dimen name="header_hero_height">200dp</dimen>
+    <dimen name="text_area_min_height">120dp</dimen>
+    <dimen name="max_content_width">600dp</dimen>
+    <dimen name="category_row_width">148dp</dimen>
+    <dimen name="promo_text_end">112dp</dimen>
+    <dimen name="product_row_width">168dp</dimen>
+    <dimen name="gallery_grid_height">220dp</dimen>
+</resources>

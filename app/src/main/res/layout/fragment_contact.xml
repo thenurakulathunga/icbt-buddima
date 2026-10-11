@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contact support (S28): call, email and WhatsApp shortcuts, then the ticket form with sticky Send. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.printxpress.app.ui.components.AppTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_title="@string/contact_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Widget.PrintXpress.ScreenContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.printxpress.app.ui.components.SectionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:px_title="@string/contact_quick" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:orientation="horizontal">
+
+                <com.printxpress.app.ui.components.LoadingButton
+                    android:id="@+id/btnCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:px_style="tonal"
+                    app:px_text="@string/action_call" />
+
+                <com.printxpress.app.ui.components.LoadingButton
+                    android:id="@+id/btnEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_sm"
+                    android:layout_weight="1"
+                    app:px_style="tonal"
+                    app:px_text="@string/action_email" />
+
+                <com.printxpress.app.ui.components.LoadingButton
+                    android:id="@+id/btnWhatsApp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_sm"
+                    android:layout_weight="1"
+                    app:px_style="tonal"
+                    app:px_text="@string/action_whatsapp" />
+            </LinearLayout>
+
+            <com.printxpress.app.ui.components.SectionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xl"
+                app:px_title="@string/ticket_section" />
+
+            <LinearLayout
+                android:id="@+id/groupForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:orientation="vertical">
+
+                <com.printxpress.app.ui.components.PxDropdown
+                    android:id="@+id/dropdownOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:px_label="@string/label_ticket_order"
+                    app:px_startIcon="@drawable/ic_package" />
+
+                <com.printxpress.app.ui.components.PxTextInput
+                    android:id="@+id/inputSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    app:px_hint="@string/hint_ticket_subject"
+                    app:px_label="@string/label_ticket_subject"
+                    app:px_maxLength="80" />
+
+                <com.printxpress.app.ui.components.PxTextInput
+                    android:id="@+id/inputMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_md"
+                    app:px_hint="@string/hint_ticket_message"
+                    app:px_inputType="multiline"
+                    app:px_label="@string/label_ticket_message"
+                    app:px_maxLength="1000" />
+            </LinearLayout>
+
+            <com.printxpress.app.ui.components.LoadingButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:visibility="gone"
+                app:px_icon="@drawable/ic_login"
+                app:px_style="filled"
+                app:px_text="@string/support_sign_in" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.printxpress.app.ui.components.StickyBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:px_buttonText="@string/action_send_ticket" />
+</LinearLayout>

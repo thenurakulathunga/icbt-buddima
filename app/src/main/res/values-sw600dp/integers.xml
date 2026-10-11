@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Wider layouts: three-column grids on tablets (docs/05 §6). -->
+<resources>
+    <bool name="px_is_tablet">true</bool>
+    <integer name="product_grid_span">3</integer>
+    <integer name="gallery_grid_span">3</integer>
+    <integer name="category_grid_span">3</integer>
+</resources>

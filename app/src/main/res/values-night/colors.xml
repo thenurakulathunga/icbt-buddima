@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark colour tokens (Derived, docs/05 §3.2): the kit's neutral scale mapped in reverse; each text pair checked for 4.5:1. -->
+<resources>
+    <color name="px_primary">#6FBAFF</color>
+    <color name="px_on_primary">#1F2024</color>
+    <color name="px_primary_container">#0050B8</color>
+    <color name="px_on_primary_container">#EAF2FF</color>
+    <color name="px_secondary">#B4DBFF</color>
+    <color name="px_on_secondary">#1F2024</color>
+    <color name="px_secondary_container">#0050B8</color>
+    <color name="px_on_secondary_container">#EAF2FF</color>
+    <color name="px_brand_bright">#6FBAFF</color>
+
+    <color name="px_error">#FF8A94</color>
+    <color name="px_on_error">#1F2024</color>
+    <color name="px_success_text">#3AC0A0</color>
+
+    <color name="px_background">#1F2024</color>
+    <color name="px_surface">#2F3036</color>
+    <color name="px_surface_variant">#494A50</color>
+    <color name="px_on_surface">#F8F9FE</color>
+    <color name="px_text_strong">#E8E9F1</color>
+    <color name="px_text_body">#D4D6DD</color>
+    <color name="px_on_surface_variant">#C5C6CC</color>
+    <color name="px_text_disabled">#8F9098</color>
+    <color name="px_outline">#71727A</color>
+    <color name="px_outline_variant">#494A50</color>
+</resources>

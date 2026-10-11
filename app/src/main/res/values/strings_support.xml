@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Offers, support hub, guidelines, FAQs, contact and tickets, gallery, settings and licences (S22–S29, S34). -->
+<resources>
+    <string name="offers_title">Offers</string>
+    <string name="offer_detail_title">Offer</string>
+    <string name="offer_valid">Valid %1$s – %2$s</string>
+    <string name="offer_min_order">Minimum order %1$s</string>
+    <string name="offer_all_products">All products</string>
+    <string name="offer_category">Applies to %1$s</string>
+    <string name="offer_percent">%1$s%% off</string>
+    <string name="offer_fixed">%1$s off</string>
+    <string name="action_shop_now">Shop now</string>
+    <string name="action_copy_code">Copy code</string>
+    <string name="action_copy_code_value">Copy code %1$s</string>
+    <string name="empty_offers_title">No offers right now</string>
+    <string name="empty_offers_message">Seasonal deals appear here – check back soon.</string>
+
+    <string name="support_intro">How can we help?</string>
+    <string name="support_intro_sub">Guides for print-ready files, answers to common questions, and a direct line to our team.</string>
+    <string name="menu_guidelines">Print guidelines</string>
+    <string name="menu_guidelines_sub">File formats, 300 DPI, CMYK, bleed</string>
+    <string name="menu_faqs">FAQs</string>
+    <string name="menu_faqs_sub">Turnaround, delivery, payment</string>
+    <string name="menu_gallery">Design gallery</string>
+    <string name="menu_gallery_sub">Sample designs for inspiration</string>
+    <string name="menu_offers">Offers and packages</string>
+    <string name="menu_offers_sub">Seasonal promotions and codes</string>
+    <string name="menu_contact">Contact support</string>
+    <string name="menu_contact_sub">Call, email, WhatsApp or raise a ticket</string>
+    <string name="menu_tickets">My tickets</string>
+    <string name="menu_tickets_sub">Requests you have sent</string>
+
+    <string name="guidelines_title">Print guidelines</string>
+    <string name="action_share_template">Share bleed template</string>
+    <string name="template_share_title">Business card bleed template</string>
+    <string name="template_label_trim">Trim line 89 × 51 mm</string>
+    <string name="template_label_bleed">Bleed 3 mm</string>
+    <string name="template_label_safe">Safe zone 5 mm</string>
+
+    <string name="faqs_title">FAQs</string>
+    <string name="search_faqs_hint">Search questions</string>
+    <string name="empty_faqs_title">No matching questions</string>
+    <string name="empty_faqs_message">Try another word or contact our team.</string>
+
+    <string name="contact_title">Contact support</string>
+    <string name="contact_quick">Talk to us</string>
+    <string name="action_call">Call</string>
+    <string name="action_email">Email</string>
+    <string name="action_whatsapp">WhatsApp</string>
+    <string name="contact_email_subject">PrintXpress support request</string>
+    <string name="contact_whatsapp_text">Hi PrintXpress, I need help with my order.</string>
+    <string name="ticket_section">Raise a ticket</string>
+    <string name="label_ticket_order">Related order (optional)</string>
+    <string name="ticket_no_order">No specific order</string>
+    <string name="label_ticket_subject">Subject</string>
+    <string name="hint_ticket_subject">e.g. Colour question on my flyer</string>
+    <string name="label_ticket_message">Message</string>
+    <string name="hint_ticket_message">Tell us what you need help with</string>
+    <string name="action_send_ticket">Send ticket</string>
+    <string name="ticket_sent">Ticket sent. We will reply by email or phone.</string>
+    <string name="tickets_title">My tickets</string>
+    <string name="ticket_status_open">Open</string>
+    <string name="ticket_status_progress">In progress</string>
+    <string name="ticket_status_resolved">Resolved</string>
+    <string name="ticket_meta">%1$s · %2$s</string>
+    <string name="empty_tickets_title">No tickets yet</string>
+    <string name="empty_tickets_message">Questions you send to our team will be listed here.</string>
+    <string name="support_sign_in">Sign in to raise a ticket</string>
+
+    <string name="gallery_title">Design gallery</string>
+    <string name="filter_all">All</string>
+    <string name="gallery_counter">%1$d / %2$d</string>
+    <string name="empty_gallery_title">No samples yet</string>
+    <string name="empty_gallery_message">Try another category.</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_order_updates">Order updates</string>
+    <string name="settings_order_updates_sub">Confirmation and every status change</string>
+    <string name="settings_promos">Offers and promotions</string>
+    <string name="settings_promos_sub">Seasonal deals and bulk discounts</string>
+    <string name="settings_system_notifications">System notification settings</string>
+    <string name="settings_system_notifications_sub">Allow or block notifications for PrintXpress</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_demo">Demo</string>
+    <string name="settings_demo_speed">Fast order simulation</string>
+    <string name="settings_demo_speed_sub">Advance orders every 20 seconds instead of 10 minutes</string>
+    <string name="settings_about">About</string>
+    <string name="settings_privacy">Privacy notice</string>
+    <string name="settings_licences">Open-source licences</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_delete_account">Delete account</string>
+    <string name="settings_delete_account_sub">Remove your account and all data on this device</string>
+    <string name="delete_account_title">Delete your account?</string>
+    <string name="delete_account_message">Your profile, addresses, saved designs, cart, orders, tickets and notifications will be permanently removed from this device. This cannot be undone.</string>
+    <string name="prefs_saved">Preferences saved</string>
+    <string name="privacy_text">PrintXpress stores your account, addresses, designs and orders only in this app on this device. Passwords are saved as salted PBKDF2 hashes, never as text. Files you upload are copied into the app\'s private storage and never shared. The app asks only for permission to show notifications. You can delete your account and all of its data at any time from Settings.</string>
+    <string name="licences_text">Hugeicons Free (Stroke Rounded) – MIT Licence, Copyright © 2025 Hugeicons.\n\nRoboto Flex – SIL Open Font License 1.1, Copyright 2017 The Roboto Flex Project Authors.\n\nMobile Apps – Prototyping Kit (Figma Community) – design tokens and component styling, used with credit to the kit author.\n\nAndroidX, Material Components, Glide and Shimmer – Apache License 2.0.</string>
+</resources>

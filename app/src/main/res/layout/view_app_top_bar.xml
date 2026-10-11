@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AppTopBar: Material toolbar plus bell and cart icon buttons with counter badges (kit Nav Bar, 56 dp). -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_weight="1"
+        app:navigationContentDescription="@string/cd_back"
+        app:navigationIconTint="?attr/colorOnSurface" />
+
+    <LinearLayout
+        android:id="@+id/actions"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/toolbar_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/space_xs">
+
+        <FrameLayout
+            android:id="@+id/boxNotifications"
+            android:layout_width="@dimen/touch_min"
+            android:layout_height="@dimen/touch_min">
+
+            <ImageButton
+                android:id="@+id/btnNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/cd_notifications"
+                android:src="@drawable/ic_notifications" />
+
+            <TextView
+                android:id="@+id/badgeNotifications"
+                style="@style/Widget.PrintXpress.CounterBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/boxCart"
+            android:layout_width="@dimen/touch_min"
+            android:layout_height="@dimen/touch_min">
+
+            <ImageButton
+                android:id="@+id/btnCart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/cd_cart"
+                android:src="@drawable/ic_cart" />
+
+            <TextView
+                android:id="@+id/badgeCart"
+                style="@style/Widget.PrintXpress.CounterBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>
